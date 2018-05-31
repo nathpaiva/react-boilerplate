@@ -5,7 +5,7 @@ import Box from './components/box';
 
 class App extends Component {
   render() {
-    return (<Box title='Register' text='First time using of caffeine.' />);
+    return (<Box title='My title' text='My sub title.' />);
   }
 }
 
