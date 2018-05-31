@@ -5,13 +5,16 @@
   "main": "index.js",
   "author": "NathPaiva",
   "scripts": {
-    "start": "node index.js"
+    "start": "node index.js",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
   },
   "license": "MIT",
   "dependencies": {
     "webpack": "^4.10.2"
   },
   "devDependencies": {
+    "@storybook/react": "^3.4.6",
     "babel-core": "^6.26.3",
     "babel-loader": "^7.1.4",
     "babel-plugin-transform-runtime": "^6.23.0",
