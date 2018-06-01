@@ -47,6 +47,11 @@
   },
   "jest": {
     "testEnvironment": "node",
-    "automock": false
+    "automock": false,
+    "moduleNameMapper": {
+      "^.+\\.scss$": "<rootDir>/config/CSSStub.js",
+      "^[./a-zA-Z0-9$_-]+\\.png$": "<rootDir>/config/ImageStub.js",
+      "^[./a-zA-Z0-9$_-]+\\.jpg$": "<rootDir>/config/ImageStub.js"
+    }
   }
 }
