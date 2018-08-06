@@ -4,7 +4,6 @@ const webpack = require('webpack');
 const common = require('./webpack.config');
 
 const HtmlPlugin = require('html-webpack-plugin');
-const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
 const CleanPlugin = require('clean-webpack-plugin');
 
@@ -16,10 +15,6 @@ module.exports = {
   plugins: [
     new CleanPlugin(['dist'], {
       root: './dist'
-    }),
-
-    new ExtractTextPlugin({
-      filename: '[name]-[hash].css'
     }),
 
     new webpack.DefinePlugin({
@@ -73,14 +68,7 @@ module.exports = {
     rules: [
       common.jsLoader,
       common.fileLoader,
-      common.urlLoader,
-      Object.assign({}, common.cssLoader, {
-        use: ExtractTextPlugin.extract({
-          fallback: common.cssLoader.use[0],
-          use: common.cssLoader.use.slice(1)
-        })
-      }),
-      common.cssLoaderUseable
+      common.urlLoader
     ]
   },
 

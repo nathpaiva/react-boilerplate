@@ -1,15 +1,22 @@
 'user strict';
 
 import React from 'react';
-import style from './box.scss';
+import PropTypes from 'prop-types';
+
+import { Title, Subtitle } from './box.css';
 
 const Box = ({ title, text }) => (
-  <h1 className={style.box}>
+  <Title>
     {title} and
-    <small>
+    <Subtitle>
       {text}
-    </small>
-  </h1>
+    </Subtitle>
+  </Title>
 );
+
+Box.propTypes = {
+  title: PropTypes.string.isRequired,
+  text: PropTypes.string.isRequired
+};
 
 export default Box;

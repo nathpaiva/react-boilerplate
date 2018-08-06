@@ -42,25 +42,6 @@ module.exports = {
     }
   },
 
-  cssLoader: {
-    test: /\.scss$/,
-    include: paths.src,
-    exclude: /\.useable\.scss$/,
-    use: [
-      { loader: 'style-loader' },
-      { loader: 'css-loader?modules&importLoaders=2&sourceMap&localIdentName=[local]___[hash:base64:5]' },
-      { loader: 'sass-loader' }]
-  },
-
-  cssLoaderUseable: {
-    test: /\.useable\.scss$/,
-    use: [
-      { loader: 'style-loader/useable' },
-      { loader: 'css-loader?modules&importLoaders=2&sourceMap&localIdentName=[local]___[hash:base64:5]' },
-      { loader: 'sass-loader' }
-    ]
-  },
-
   fileLoader: {
     test: /\.(ico|jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|txt)(\?.*)?$/,
     include: paths.src,

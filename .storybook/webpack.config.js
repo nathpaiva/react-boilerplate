@@ -1,13 +1,13 @@
-'use strict';
+// 'use strict';
 
-const path = require('path');
-const common = require('../webpack.config');
+// const path = require('path');
+// const common = require('../webpack.config');
 
-module.exports = {
-  module: {
-    rules: [
-      common.cssLoader,
-      common.cssLoaderUseable
-    ]
-  }
-};
+// module.exports = {
+//   module: {
+//     rules: [
+//       common.cssLoader,
+//       common.cssLoaderUseable
+//     ]
+//   }
+// };

@@ -1,10 +1,9 @@
 'user strict';
 
 import React from 'react';
-
 import { storiesOf } from '@storybook/react';
+import '../../css/reset.css';
 
-import '../../css/_reset.scss';
 import Box from './';
 
 storiesOf('Box', module)
