@@ -1,9 +1,10 @@
 'user strict';
 
 import React from 'react';
+import style from './box.scss';
 
 const Box = ({ title, text }) => (
-  <h1>
+  <h1 className={style.box}>
     {title} and
     <small>
       {text}

@@ -16,7 +16,6 @@ I create a component with test and storybook to have an example.
 │       └── index.js
 ├── css
 │   ├── _reset.scss
-│   └── inline.js
 ├── html
 │   └── template.html
 ├── images
