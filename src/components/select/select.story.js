@@ -2,8 +2,6 @@
 
 import React from 'react';
 import { storiesOf } from '@storybook/react';
-import { action } from '@storybook/addon-actions';
-console.log('​action', action);
 
 import '../../css/_reset.scss';
 import Select from './';

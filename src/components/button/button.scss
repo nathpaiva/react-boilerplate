@@ -1,0 +1,39 @@
+.special-button {
+  width: 175px;
+  height: 188px;
+  background-color: #1574b5;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  color: #fff;
+  cursor: pointer;
+
+  &:hover {
+    background-color: #00205b;
+  }
+
+  &:focus {
+    background-color: #ff8228;
+  }
+
+  svg {
+    width: 32px;
+    height: 44px;
+    margin-bottom: 20px;
+  }
+
+  p {
+    padding: 0 40px;
+  }
+}
+
+:global {
+  .button-hover {
+    background-color: #00205b;
+  }
+
+  .button-clicked {
+    background-color: #ff8228;
+  }
+}
